@@ -25,5 +25,7 @@
 			"path": "Other Effects"
 		}
 	],
-	"settings": {}
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "Text Decoration"
+	}
 }

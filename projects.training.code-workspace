@@ -1,9 +1,6 @@
 {
 	"folders": [
 		{
-			"path": "projects.training"
-		},
-		{
 			"path": "Dashboards"
 		},
 		{
@@ -26,6 +23,6 @@
 		}
 	],
 	"settings": {
-		"liveServer.settings.multiRootWorkspaceName": "Text Decoration"
+		"liveServer.settings.multiRootWorkspaceName": "Login-Register Forms"
 	}
 }

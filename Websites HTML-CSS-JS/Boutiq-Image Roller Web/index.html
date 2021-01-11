@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>boutiq</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/home.css">
+
+    <!-- FontAwesome Icons Library -->
+    <script src="https://kit.fontawesome.com/64d58efce2.js" crossorigin="anonymous"></script>
+
+    <!-- Swiper -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+    
+    
+</head>
+
+<body>
+    <section>
+        <div class="circle"></div>
+        <header>
+            <a href="index.html" class="logo">boutiq</a>
+            <div class="toggle" onclick="toggleMenu()">
+                <i class="fas fa-bars"></i>
+                <i class="fas fa-times"></i>
+            </div>
+            <ul class="navigation">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Nosotros</a></li>
+                <li><a href="#">Contacto</a></li>
+                &nbsp;&nbsp; 
+                <li><a href="login.html" class="text-login">Login</a></li>
+                <li><a href="login.html" class="fas fa-user" title="Login/Registrarse"></a></li>
+            </ul>
+        </header>
+        <div class="content">
+            <div class="textBox">
+                <h2>Mejora tus ventas</h2>
+                <p>Encuentra en un solo lugar toda la información que necesitas para vender perfumes. Dale un nuevo enfoque a la venta de fragrancias y sorprende a tus clientes. ¡Vende más, vende mejor!</p>
+                <a href="#">Conoce más</a>
+            </div>
+
+            <div class="imgBox">
+                <div class="swiper-container">
+                    <div class="swiper-wrapper">
+                      <div class="swiper-slide"><img src="img/bleuchanel.png"></div>
+                      <div class="swiper-slide"><img src="img/bulgari.png"></div>
+                      <div class="swiper-slide"><img src="img/ckone.png"></div>
+                      <div class="swiper-slide"><img src="img/grioprofumo.png"></div>
+                      <div class="swiper-slide"><img src="img/interdit.png"></div>
+                      <div class="swiper-slide"><img src="img/sauvage.png"></div>
+                    </div>
+                </div>
+            </div>
+            <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+            <script>
+                var swiper = new Swiper('.swiper-container', {
+                effect: 'coverflow',
+                grabCursor: true,
+                centeredSlides: true,
+                slidesPerView: 'auto',
+                coverflowEffect: {
+                    rotate: 0,
+                    stretch: 0,
+                    depth: 200,
+                    modifier: 1,
+                    slideShadows: true,
+                },
+                pagination: {
+                    el: '.swiper-pagination',
+                },
+                loop:true,
+                });
+            </script>
+
+            <script>
+                
+                function toggleMenu()
+                {
+                const menuToggle=document.querySelector('.toggle');
+                const navigation=document.querySelector('.navigation');       
+
+                menuToggle.classList.toggle('active');
+                navigation.classList.toggle('active');
+                }
+
+            </script>
+
+        </div>
+        <ul class="sci">
+            <li><a href="#" class="social-icon">
+                <i class="fab fa-facebook-f"></i>
+            </a></li>
+            <li><a href="#" class="social-icon">
+                <i class="fab fa-instagram"></i>
+            </a></li>
+            <li><a href="#" class="social-icon">
+                <i class="fab fa-linkedin-in"></i>
+            </a></li>
+        </ul>
+    </section>
+    
+</body>
+</html>

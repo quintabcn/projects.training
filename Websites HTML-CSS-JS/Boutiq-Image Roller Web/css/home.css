@@ -1,0 +1,301 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap');
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+section{
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    padding: 10px 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #fff;
+}
+section .circle
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #8E44AD;
+    clip-path: circle(70% at right -20%);
+}
+header
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 40px 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+header .logo
+{
+    position: relative;
+    font-size: 3rem;
+    color: #8344AD;
+    font-weight: bold;
+    font-family: 'Poppins', sans-serif;
+    text-decoration: none;
+}
+header .toggle
+{
+    display: none;
+    cursor: pointer;
+}
+header .navigation
+{
+    position: relative;
+    display: flex;
+}
+header .navigation li
+{
+    list-style: none;
+}
+header .navigation li a
+{
+    display: inline-block;
+    color: #fff;
+    font-weight: 500;
+    text-decoration: none;
+    margin-left: 40px;
+}
+header .navigation .text-login
+{
+    display:none;
+}
+header .navigation .fa-user
+{
+    font-size: 2em;
+}
+.content
+{
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.content .textBox
+{
+    position: relative;
+    max-width: 600px;
+    margin-right: 20px;
+}
+.content .textBox h2
+{
+    color: #222;
+    font-size: 3em;
+    margin-bottom: 10px;
+    line-height: 1.4em;
+    font-weight: 700;
+}
+.content .textBox p
+{
+    color: #222;
+}
+.content .textBox a
+{
+    display: inline-block;
+    margin-top: 20px;
+    padding: 8px 20px;
+    background: #8344AD;
+    color: #fff;
+    border-radius: 40px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    text-decoration: none;
+}
+.sci
+{
+    position: absolute;
+    bottom: 40px;
+    left: 100px;
+    display: flex;
+    align-items: center;
+}
+.sci li
+{
+    list-style: none;
+    align-items: center;
+}
+.sci li a
+{
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    transition: 0.2s ease-in-out;
+}
+.sci li a:hover
+{
+    color: #8344AD;
+    transform: translateY(-10px);
+    transition: 0.2s ease-in-out;
+}
+.social-icon{
+    margin: 0;
+    text-decoration: none;
+    color: #333;
+    font-size: 1.5rem;
+}
+
+/********SLIDER**********/
+.content .swiper-container
+{
+    width: 100%;
+    padding-top: 50px;
+    padding-bottom: 50px;
+
+}
+.content .swiper-slide 
+{
+    background-position: center;
+    background-size: cover;
+    width: 200px;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    background-color: transparent;
+}
+.content .imgBox
+{
+    width: 100%;
+    padding-left: 20px;
+    display: flex;
+    justify-content: flex-end;
+}
+.content .swiper-wrapper
+{
+    width:600px;
+}
+.content .imgBox img
+{
+    max-width: 150px;
+}
+.content .swiper-slide img
+{
+    /*position: absolute;*/
+    bottom: 0;
+    min-height: 100%;
+}
+
+.content .swiper-container-3d .swiper-slide-shadow-left,
+.content .swiper-container-3d .swiper-slide-shadow-right
+{
+    background-image: none;
+    background-color: none;
+}
+
+@media (max-width:991px)
+{
+    section .circle
+    {
+        clip-path: circle(110% at right -68%);
+    }
+    
+    header
+    {
+        padding: 40px;
+    }
+    section
+    {
+        padding: 150px 40px;
+    }
+    .sci
+    {
+        left: 40px;
+    }
+    .content
+    {
+        flex-direction: column;
+    }
+    .content .textBox,
+    .content .imgBox
+    {
+        max-width: 100%;
+    }
+    .swiper-slide
+    {
+        height: 300px;
+    }
+    header .logo
+    {
+        font-size: 2rem;
+        color: #fff;
+    }
+    header .navigation
+    {
+        display: none;
+    }
+    header .navigation.active
+    {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        display: flex;
+        height: 100%;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background: #8E44AD;
+        z-index: 2;    
+    }
+    header .navigation.active .text-login
+    {
+        display:block;
+        font-size: 1.5em;
+    }
+    header .navigation .fa-user
+    {
+        display: none;
+    }
+    header .toggle
+    {
+        display: block;
+        position: relative;
+        width: 30px;
+        height: 30px;
+        color: #fff;
+        cursor: pointer;
+        z-index: 3;
+    }
+    header .toggle .fa-times
+    {
+        display:none;
+    }
+    header .toggle.active
+    {
+        color: #fff;
+    }
+    header .toggle.active .fa-bars
+    {
+        display:none;
+    }
+    header .toggle.active .fa-times
+    {
+        display:block;
+        position: fixed;
+        width: 40px;
+        height: 40px;
+    }
+    header .navigation li a 
+    {
+        margin: 10px 0;
+        font-size: 1.5em;
+        font-size: 300;
+    }
+
+    
+}

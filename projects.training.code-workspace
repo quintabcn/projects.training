@@ -10,9 +10,6 @@
 			"path": "Navigation Bars"
 		},
 		{
-			"path": "Portfolio websites"
-		},
-		{
 			"path": "Text Decoration"
 		},
 		{
@@ -20,9 +17,12 @@
 		},
 		{
 			"path": "Other Effects"
+		},
+		{
+			"path": "Websites HTML-CSS-JS"
 		}
 	],
 	"settings": {
-		"liveServer.settings.multiRootWorkspaceName": "Login-Register Forms"
+		"liveServer.settings.multiRootWorkspaceName": "Other Effects"
 	}
 }

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Draggable Responsive Slider</title>
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <section>
+        <div class="slider">
+              <!-- Swiper -->
+            <div class="swiper-container">
+                <div class="swiper-wrapper">
+                    <!-- <div class="swiper-slide"><a href="http://www.google.com"><img src="img/bleuchanel.png"></a></div> -->
+                    <div class="swiper-slide"><img src="img/bleuchanel.png"></div>
+                    <div class="swiper-slide"><img src="img/bulgari.png"></div>
+                    <div class="swiper-slide"><img src="img/ckone.png"></div>
+                    <div class="swiper-slide"><img src="img/grioprofumo.png"></div>
+                    <div class="swiper-slide"><img src="img/interdit.png"></div>
+                    <div class="swiper-slide"><img src="img/sauvage.png"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
+     <!-- Initialize Swiper -->
+    <script>
+        var swiper = new Swiper('.swiper-container', {
+        effect: 'coverflow',
+        grabCursor: true,
+        centeredSlides: true,
+        slidesPerView: 'auto',
+        coverflowEffect: {
+            rotate: 0,
+            stretch: 0,
+            depth: 0,
+            modifier: 1,
+            slideShadows: true,
+        },
+        loop: true,
+        });
+    </script>
+</body>
+</html>

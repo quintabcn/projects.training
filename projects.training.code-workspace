@@ -1,28 +1,8 @@
 {
 	"folders": [
 		{
-			"path": "Dashboards"
-		},
-		{
-			"path": "Login-Register Forms"
-		},
-		{
-			"path": "Navigation Bars"
-		},
-		{
-			"path": "Text Decoration"
-		},
-		{
-			"path": "Image Effects"
-		},
-		{
-			"path": "Other Effects"
-		},
-		{
-			"path": "Websites HTML-CSS-JS"
+			"path": "."
 		}
 	],
-	"settings": {
-		"liveServer.settings.multiRootWorkspaceName": "Image Effects"
-	}
+	"settings": {}
 }

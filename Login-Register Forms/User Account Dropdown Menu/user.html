@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Dropdown Menu</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="action">
+        <div class="profile" onclick="menuToggle()">
+            <img src="img/276062_633905154_1761765322_n.jpg" alt="">
+        </div>
+        <div class="menu">
+            <h3>Someone Famous<br>
+            <span>Website Designer</span></h3>
+            <ul>
+                <li>
+                    <img src="img/user.png">
+                    <a href="#">My Profile</a>
+                </li>
+                <li>
+                    <img src="img/edit.png">
+                    <a href="#">Edit Profile</a>
+                </li>
+                <li>
+                    <img src="img/envelope.png">
+                    <a href="#">Inbox</a>
+                </li>
+                <li>
+                    <img src="img/settings.png">
+                    <a href="#">Settings</a>
+                </li>
+                <li>
+                    <img src="img/question.png">
+                    <a href="#">Help</a>
+                </li>
+                <li>
+                    <img src="img/log-out.png">
+                    <a href="#">Logout</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <script>
+        function menuToggle(){
+            const toggleMenu=document.querySelector(".menu");
+            toggleMenu.classList.toggle('active');
+        }
+    </script>
+</body>
+</html>

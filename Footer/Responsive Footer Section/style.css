@@ -160,6 +160,26 @@ footer p{
     footer{
         padding: 40px;
     }
+
+    footer .container{
+        flex-direction: column;
+    }
+
+    footer .container .sec{
+        margin-bottom: 40px;
+        margin-right: 0;
+    }
+
+    footer .container .sec.aboutus,
+    .quickLinks, .contact{
+        width: 100%;
+    }
+
+    .copyrightText{
+        padding: 8px 40px;
+    }
+
+
 }
 
 

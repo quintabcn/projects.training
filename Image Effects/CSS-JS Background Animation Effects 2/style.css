@@ -70,7 +70,7 @@ section h2{
     }
 }
 
-section .active .banner .blocks{
+section.active .banner .blocks{
     animation: animateTwo 2s ease-in-out forwards;
     background: url(ian-schneider-TamMbr4okv4-unsplash.jpg);
     background-position: center;

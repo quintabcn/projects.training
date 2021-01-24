@@ -8,6 +8,7 @@
 
 img{
     max-width: 100%;
+    border-radius: 50%;
 }
 
 .msg-header{
@@ -23,6 +24,40 @@ img{
     border-radius: 50%;
     width: 40px;
     margin-left: 5%;
-    margin-top: 12px;
+    margin-top: 10px;
+    margin-bottom: 10px;
     float: left;
+    border: 2px solid #fff;
+}
+
+.active{
+    width: 220px;
+    float: left;
+    margin-top: 10px;
+}
+
+.active h4{
+    font-size: 15px;
+    margin-left: 10px;
+    color: #fff;
+}
+
+.active h6{
+    font-size: 10px;
+    margin-left: 10px;
+    line-height: 2px;
+    color: #fff;
+}
+
+.header-icons{
+    width: 120px;
+    float: right;
+    margin: 12px;
+    margin-right: 10px;
+}
+
+.header-icons .fa{
+    color: #fff;
+    cursor: pointer;
+    margin: 10px;
 }

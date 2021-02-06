@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="style.css">
+
+    <title>3D Web Elements by using zText.js</title>
+
+</head>
+<body>
+    <h2 class="emoji-layers">👨👩💘</h2>
+    <h2 class="text-layers">Cool</h2>
+    <div class="img-layers">
+        <img src="djmonkey2.jpg" class="img">
+    </div>
+    <script src="ztext.min.js"></script>
+    <script>
+        var ztxt = new Ztextify(".text-layers", {
+            depth: "50px",
+            layers: 80,
+            fade: false,
+            direction: "forwards",
+            eventDirection: "reverse",
+            event: "pointer",
+            eventRotation: "35deg"
+         });
+
+
+         var emoji = new Ztextify(".emoji-layers", {
+            depth: "50px",
+            layers: 80,
+            fade: false,
+            direction: "forwards",
+            eventDirection: "default",
+            event: "pointer",
+            eventRotation: "35deg"
+         });
+         
+
+         var image = new Ztextify(".img-layers", {
+            depth: "100px",
+            layers: 200,
+            fade: false,
+            direction: "forwards",
+            eventDirection: "default",
+            event: "pointer",
+            eventRotation: "35deg"
+         });
+
+    </script>
+</body>
+</html>

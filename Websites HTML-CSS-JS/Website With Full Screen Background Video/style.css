@@ -1,0 +1,58 @@
+@import url('https://fonts.googleapis.com/css?family=Bard+Script');
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@600;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.header{
+    background: rgba(0,0,100,0.4);
+    height: 100vh;
+}
+
+.video-background{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: -1;
+}
+
+@media(min-aspect-ratio:16/9){
+    .video-background{
+        width: 100%;
+        height: auto;
+    }
+}
+
+@media(max-aspect-ratio:16/9){
+    .video-background{
+        width: auto;
+        height: 100%;
+    }
+}
+
+.logo{
+    margin: 25px;
+    height: 150px;
+}
+
+.welcome-msg{
+    position: relative;
+    color: #fff;
+    top: 0px;
+    font-family: 'Nunito', cursive;
+    font-size: 3rem;
+    font-weight: lighter; 
+    text-transform: uppercase;
+    text-align: left;
+    margin-left: 200px;
+}
+
+.welcome-msg h1{
+    letter-spacing: 2px;
+}

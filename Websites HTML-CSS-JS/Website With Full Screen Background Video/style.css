@@ -46,13 +46,33 @@
     color: #fff;
     top: 0px;
     font-family: 'Nunito', cursive;
-    font-size: 3rem;
-    font-weight: lighter; 
-    text-transform: uppercase;
     text-align: left;
     margin-left: 200px;
 }
 
 .welcome-msg h1{
     letter-spacing: 2px;
+    font-size: 3rem;
+    font-weight: lighter; 
+    text-transform: uppercase;
+    padding-bottom: 30px;
+}
+
+.btn{
+    font-size: 18px;
+    color: #fff;
+    margin: 5px;
+    padding: 7px 22px;
+    text-decoration: none;
+    border: 1px solid coral;
+    border-radius: 25px;
+}
+
+.btn-subscribe{
+    background: coral;
+}
+
+.btn-comment{
+    background: coral;
+    transition: .5s;
 }

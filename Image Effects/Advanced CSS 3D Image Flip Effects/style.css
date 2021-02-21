@@ -1,0 +1,40 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.imgBx{
+    width: 400px;
+    height: 400px;
+    background: #000;
+    transform-style: preserve-3d;
+    perspective: 1000px;
+}
+
+.imgBx input[type="checkbox"]{
+    position: relative;
+    width: 400px;
+    height: 400px;
+    appearance: none;
+    outline: none;
+    cursor: pointer;
+}
+
+span{
+    position: absolute;
+    top: 0;
+    width: 50%;
+    height: 100%;
+    pointer-events: none;
+    transform-style: preserve-3d;
+}
+
+span .bg1

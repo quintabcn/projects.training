@@ -37,4 +37,74 @@ span{
     transform-style: preserve-3d;
 }
 
-span .bg1
+span.bg1
+{
+    left: 0;
+    background: url("orange-wave.jpg");
+    background-size: cover;
+}
+
+span.bg1::before
+{
+    background: url("ligth-wave.jpg");
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transform-origin: right;
+    transition: 2s;
+    backface-visibility: hidden;
+    background-size: cover;
+}
+
+.imgBx input[type="checkbox"]:checked ~ span.bg1::before{   
+    transform: rotateY(180deg);
+}
+
+span.bg2
+{
+    right: 0;
+    background: url("ligth-wave.jpg");
+    background-size: cover;
+    background-position-x: 200px;
+}
+
+span.bg2::before
+{
+    background: url("orange-wave.jpg");
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-position-x: 200px;
+    transform-origin: left;
+    transition: 2s;
+    backface-visibility: hidden;
+    transform: rotateY(180deg);
+    background-size: cover;
+}
+
+.imgBx input[type="checkbox"]:checked ~ span.bg2::before{   
+    transform: rotateY(360deg);
+}
+
+.bg{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transition: 1s;
+    box-shadow: 0 25px 35px rgba(0,0,0,0.1),
+                0 0 0 800px #b0cceb;
+    pointer-events: none;
+}
+
+.imgBx input[type="checkbox"]:checked ~ .bg{
+    box-shadow: 0 25px 35px rgba(0,0,0,0.1),
+                0 0 0 800px #ffa011;
+}

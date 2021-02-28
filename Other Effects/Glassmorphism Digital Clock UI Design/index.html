@@ -36,13 +36,22 @@
             var am='AM';
 
             // convert 24hour time to 12 hour format with AM PM Indicator
-            if( h > 12){
-                h= h -12;
-                var am= 'PM';
+            if(h<12){
+                am='AM';
             }
 
+            if(h>12){
+                h=h-12;
+                am='PM';
+            }
 
-            hour.innertHTML = h;
+       
+            // add 0 to the beginning of nunber if less than 10
+            h=(h<10)? '0' + h: h;
+            m=(m<10)? '0' + m: m;
+            s=(s<10)? '0' + s: s;
+
+            hour.innerHTML = h;
             minute.innerHTML= m;
             seconds.innerHTML= s;
             ampm.innerHTML= am;
